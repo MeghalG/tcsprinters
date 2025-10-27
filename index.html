@@ -59,7 +59,8 @@
         <div style="font-weight:600; font-size:18px">Printer Index</div>
         <div class="muted">rank researchers by output</div>
         <div class="spacer"></div>
-        <!-- (search removed by request) -->
+        <!-- Search -->
+        <input id="search" type="text" placeholder="Search name, institution, or title…" style="min-width:240px; flex:0 1 340px" />
       </div>
     </header>
 
@@ -131,15 +132,7 @@
           </div>
         </div>
 
-        <!-- Add Scholar ID -->
-        <div class="card">
-          <div style="font-weight:600; font-size:14px">Add Google Scholar ID</div>
-          <div class="row" style="margin-top:6px">
-            <input id="newScholarId" type="text" placeholder="e.g., 7JU5bb0AAAAJ" style="flex:1" />
-            <button id="addScholarBtn">Add</button>
-          </div>
-          <div id="ingestStatus" class="muted" style="margin-top:6px"></div>
-        </div>
+        <!-- (Removed Add Google Scholar ID card) -->
       </section>
 
       <!-- Selected Group table -->
@@ -204,6 +197,7 @@
         conf:[], data:null,
         selected:new Set(),
         customFormula:'citations / (papers || 1)',
+        search:''
       };
 
       // ---------- helpers ----------
@@ -213,7 +207,7 @@
       function includeWork(w){
         if(!w||!w.year) return false;
         if((!w.preprint || String(w.preprint).toLowerCase()==='none') && (!w.pages || w.pages===0) && (!w.conference || w.conference.toLowerCase()==='other'))
-          return false; 
+          return false;
         if(w.year<state.fromYear || w.year>state.toYear) return false;
         if(state.conf && state.conf.length){
           const conf=(w.conference||'').toLowerCase();
@@ -243,6 +237,16 @@
           if(!ok) return false;
         }
         return true;
+      }
+
+      function matchesSearch(p){
+        const q = state.search.trim().toLowerCase();
+        if(!q) return true;
+        const name = (p.name||'').toLowerCase();
+        const inst = (p.institution||'').toLowerCase();
+        if(name.includes(q) || inst.includes(q)) return true;
+        // fallback: search titles quickly
+        return (p.works||[]).some(w => (w.title||'').toLowerCase().includes(q));
       }
 
       function seriesFor(p){
@@ -302,7 +306,8 @@
       // ---------- rendering ----------
       function render(){
         if(!state.data) return;
-        const listAll = (state.data.printers||state.data.professors||[]);
+        const all = (state.data.printers||state.data.professors||[]);
+        const listAll = all.filter(matchesSearch);
 
         // Selected table (if any)
         const selected = listAll.filter(p => state.selected.has(keyFor(p)));
@@ -372,7 +377,6 @@
         document.getElementById('modalTitle').textContent=`${p.name} — publications`;
         const list=document.getElementById('pubList'); list.innerHTML='';
 
-        // Include works even if preprint === "None", but keep year & conf filters
         const ws=(p.works||[]).filter(includeWorkModal).sort((a,b)=>(b.year||0)-(a.year||0));
         if(!ws.length){
           list.innerHTML=`<div class="muted">No publications in current filters.</div>`;
@@ -537,16 +541,10 @@
         return [...ys].sort((a,b)=>a-b);
       }
 
-      // Add Scholar ID
-      document.getElementById('addScholarBtn').onclick=async()=>{
-        const id=document.getElementById('newScholarId').value.trim(); if(!id) return;
-        const st=document.getElementById('ingestStatus'); st.textContent='Submitting…';
-        try{
-          const r=await fetch('/api/ingest',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id})});
-          const d=await r.json(); if(!r.ok) throw new Error(d.error||'Failed');
-          st.textContent='Updated. Reloading…'; await loadData(); st.textContent='Done.';
-        }catch(e){ st.textContent='Error: '+e.message; }
-      };
+      // ---------- search wiring (debounced) ----------
+      function debounce(fn,ms){ let t; return (...args)=>{ clearTimeout(t); t=setTimeout(()=>fn(...args),ms); }; }
+      const searchEl = document.getElementById('search');
+      searchEl.addEventListener('input', debounce(()=>{ state.search = searchEl.value; render(); }, 120));
 
       loadData();
     </script>
