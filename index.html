@@ -9,15 +9,16 @@
       *{ box-sizing:border-box; }
       body{ margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif; color:var(--fg); background:var(--bg); }
       header{ position:sticky; top:0; backdrop-filter:saturate(1.2) blur(6px); background:#fffccccc; border-bottom:1px solid var(--border); z-index:10; }
-      .container{ max-width:1100px; margin:0 auto; padding:12px 16px; }
+      .container{ max-width:1200px; margin:0 auto; padding:12px 16px; }
       .row{ display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
       .spacer{ flex:1; }
       input[type="text"], input[type="number"], select, textarea{ padding:8px 10px; border:1px solid var(--border); border-radius:10px; font-size:14px; background:#fff; }
+      input[type="number"]{ width:120px; }
       button{ padding:7px 10px; border:1px solid var(--border); border-radius:10px; background:#fff; font-size:14px; cursor:pointer; transition: transform .05s ease, background .2s ease; }
       button:active{ transform: translateY(1px); }
       button.active{ background:#111; color:#fff; border-color:#111; }
       .card{ background:#fff; border:1px solid var(--border); border-radius:16px; padding:14px; }
-      .grid{ display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:12px; }
+      .grid{ display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:12px; }
       table{ width:100%; border-collapse:collapse; }
       th, td{ text-align:left; padding:10px 12px; vertical-align: top; }
       thead th{ background:#f6f6f6; font-weight:600; font-size:13px; position:relative; }
@@ -59,8 +60,7 @@
         <div style="font-weight:600; font-size:18px">Printer Index</div>
         <div class="muted">rank researchers by output</div>
         <div class="spacer"></div>
-        <!-- Search -->
-        <input id="search" type="text" placeholder="Search name, institution, or title…" style="min-width:240px; flex:0 1 340px" />
+        <!-- search removed -->
       </div>
     </header>
 
@@ -125,14 +125,27 @@
             </div>
           </div>
           <!-- years -->
-          <div class="row" style="margin-top:10px">
-            <input id="from" type="number" style="width:110px" />
+          <div class="row" style="margin-top:10px; gap:10px">
+            <div><span class="muted">years</span></div>
+            <input id="from" type="number" />
             <span class="muted">to</span>
-            <input id="to" type="number" style="width:110px" />
+            <input id="to" type="number" />
+          </div>
+          <!-- page count range -->
+          <div class="row" style="margin-top:10px; gap:10px">
+            <div><span class="muted">page count</span></div>
+            <input id="pageMin" type="number" placeholder="min" />
+            <span class="muted">to</span>
+            <input id="pageMax" type="number" placeholder="max" />
+          </div>
+          <!-- citations range -->
+          <div class="row" style="margin-top:10px; gap:10px">
+            <div><span class="muted">citations</span></div>
+            <input id="citeMin" type="number" placeholder="min" />
+            <span class="muted">to</span>
+            <input id="citeMax" type="number" placeholder="max" />
           </div>
         </div>
-
-        <!-- (Removed Add Google Scholar ID card) -->
       </section>
 
       <!-- Selected Group table -->
@@ -176,7 +189,7 @@
 
       <p class="muted" style="margin:12px 4px 36px">
         Data source: Google Scholar–derived JSON; pages from PDFs when possible.
-        Works with <code>preprint === "None"</code> are excluded from counts, but are shown in the modal.
+        Works with <code>preprint === "None"</code> are excluded from counts.
       </p>
     </main>
 
@@ -194,21 +207,33 @@
       const state = {
         metric:'papers', basis:'papers', halfLife:4,
         fromYear:2015, toYear:new Date().getFullYear(),
+        pageMin:null, pageMax:null,
+        citeMin:null, citeMax:null,
         conf:[], data:null,
         selected:new Set(),
-        customFormula:'citations / (papers || 1)',
-        search:''
+        customFormula:'citations / (papers || 1)'
       };
 
       // ---------- helpers ----------
       function expDecayWeight(y,hl,cur){ if(!hl||hl<=0)return 1; const dt=Math.max(0,cur-y); return Math.exp(-Math.log(2)*dt/hl); }
       function workCitations(w){ return Number(w.citations??w.cited_by_count??w.cited_by??0)||0; }
+      const numOrNull = v => {
+        if (v === null || v === undefined) return null;
+        if (typeof v === 'string' && v.trim() === '') return null; // empty => no constraint
+        const n = Number(v);
+        return Number.isFinite(n) ? n : null;
+      };
 
       function includeWork(w){
         if(!w||!w.year) return false;
-        if((!w.preprint || String(w.preprint).toLowerCase()==='none') && (!w.pages || w.pages===0) && (!w.conference || w.conference.toLowerCase()==='other'))
+
+        // Core inclusion rule for "counts toward number of papers"
+        if((!w.preprint || String(w.preprint).toLowerCase()==='none') && (!w.pages || w.pages===0) && (!w.conference || String(w.conference).toLowerCase()==='other'))
           return false;
+
         if(w.year<state.fromYear || w.year>state.toYear) return false;
+
+        // Conference filter (if any)
         if(state.conf && state.conf.length){
           const conf=(w.conference||'').toLowerCase();
           const wants=state.conf.map(c=>c.toLowerCase());
@@ -219,41 +244,25 @@
           );
           if(!ok) return false;
         }
-        return true;
-      }
 
-      // Include in modal: same filters but DO NOT exclude preprint==="None"
-      function includeWorkModal(w){
-        if(!w||!w.year) return false;
-        if(w.year<state.fromYear || w.year>state.toYear) return false;
-        if(state.conf && state.conf.length){
-          const conf=(w.conference||'').toLowerCase();
-          const wants=state.conf.map(c=>c.toLowerCase());
-          const ok = wants.some(want =>
-            (want==='preprint' && conf==='preprint') ||
-            (want==='other' && conf==='other') ||
-            conf.startsWith(want)
-          );
-          if(!ok) return false;
-        }
-        return true;
-      }
+        // Page-count filter
+        const pages = Number(w.pages||0);
+        if(state.pageMin!==null && pages < state.pageMin) return false;
+        if(state.pageMax!==null && pages > state.pageMax) return false;
 
-      function matchesSearch(p){
-        const q = state.search.trim().toLowerCase();
-        if(!q) return true;
-        const name = (p.name||'').toLowerCase();
-        const inst = (p.institution||'').toLowerCase();
-        if(name.includes(q) || inst.includes(q)) return true;
-        // fallback: search titles quickly
-        return (p.works||[]).some(w => (w.title||'').toLowerCase().includes(q));
+        // Citations filter
+        const cites = workCitations(w);
+        if(state.citeMin!==null && cites < state.citeMin) return false;
+        if(state.citeMax!==null && cites > state.citeMax) return false;
+
+        return true;
       }
 
       function seriesFor(p){
         const y=[],pp=[],pg=[],cc=[];
         for(let yr=state.fromYear; yr<=state.toYear; yr++){
           y.push(yr);
-          const ws=p.works.filter(w=>includeWork(w)&&w.year===yr);
+          const ws=(p.works||[]).filter(w=>includeWork(w)&&w.year===yr);
           pp.push(ws.length);
           pg.push(ws.reduce((a,w)=>a+(w.pages||0),0));
           cc.push(ws.reduce((a,w)=>a+workCitations(w),0));
@@ -307,10 +316,9 @@
       function render(){
         if(!state.data) return;
         const all = (state.data.printers||state.data.professors||[]);
-        const listAll = all.filter(matchesSearch);
 
         // Selected table (if any)
-        const selected = listAll.filter(p => state.selected.has(keyFor(p)));
+        const selected = all.filter(p => state.selected.has(keyFor(p)));
         const rowsSel = selected.map(p => rowData(p)).sort((a,b)=>b.score-a.score);
         const selSection = document.getElementById('selectedSection');
         const selBody = document.getElementById('rowsSelected');
@@ -323,7 +331,7 @@
         }
 
         // Main table
-        const rowsAll = listAll.map(p => rowData(p)).sort((a,b)=>b.score-a.score);
+        const rowsAll = all.map(p => rowData(p)).sort((a,b)=>b.score-a.score);
         const tbody = document.getElementById('rows');
         tbody.innerHTML = '';
         rowsAll.forEach((r,i)=> tbody.appendChild(rowEl(i+1, r)));
@@ -371,26 +379,25 @@
       const fmt=x=>typeof x!=='number'?x:x>=1000&&state.metric!=='weighted'&&state.metric!=='custom'?x.toLocaleString():x.toFixed(2);
       function sparkline(v){const w=96,h=28,m=Math.max(1,...v);const pts=v.map((x,i)=>`${(i/Math.max(v.length-1,1))*(w-2)+1},${h-1-(x/m)*(h-4)}`).join(' ');return `<svg class="spark" width="${w}" height="${h}"><polyline fill="none" stroke="currentColor" stroke-width="2" points="${pts}"/></svg>`;}
 
-      // ---------- modal (include non-online works) ----------
+      // ---------- modal (use same inclusion as counts) ----------
       function openModal(p){
         const dlg=document.getElementById('pubModal');
         document.getElementById('modalTitle').textContent=`${p.name} — publications`;
         const list=document.getElementById('pubList'); list.innerHTML='';
 
-        const ws=(p.works||[]).filter(includeWorkModal).sort((a,b)=>(b.year||0)-(a.year||0));
+        // Only works that pass current filter *and* count toward totals
+        const ws=(p.works||[]).filter(includeWork).sort((a,b)=>(b.year||0)-(a.year||0));
         if(!ws.length){
           list.innerHTML=`<div class="muted">No publications in current filters.</div>`;
         }else{
           ws.forEach(w=>{
-            const lnk=esc(w.id||''),t=esc(w.title||'(untitled)'),y=w.year||'',pg=w.pages||0,pre=esc(w.preprint||''),conf=esc(w.conference||''),ven=esc(w.venue||''),cit=workCitations(w);
+            const lnk=esc(w.id||''),t=esc(w.title||'(untitled)'),y=w.year||'',pg=w.pages||0,conf=esc(w.conference||''),ven=esc(w.venue||''),cit=workCitations(w),pre=esc(w.preprint||'');
             const href=lnk?` href="${lnk}" target="_blank" rel="noopener"`:'';
-            const excluded = (!w.preprint || String(w.preprint).toLowerCase()==='none');
             list.innerHTML+=`<div style="padding:10px 0;border-top:1px solid var(--border)">
               <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:baseline">
                 <a class="plink"${href}>${t}</a>
                 ${pre && pre.toLowerCase()!=='none' ? `<span class="pill">${pre}</span>` : ''}
                 ${conf ? `<span class="pill">${conf}</span>` : ''}
-                ${excluded ? `<span class="pill" title="Excluded from counts">no online version</span>` : ''}
               </div>
               <div class="muted">${y} · ${ven} · pages: ${pg} · citations: ${cit}</div>
             </div>`;
@@ -417,23 +424,11 @@
       document.getElementById('from').onchange=e=>{ state.fromYear=+e.target.value; render(); };
       document.getElementById('to').onchange=e=>{ state.toYear=+e.target.value; render(); };
 
-      // Apply custom with feedback
-      document.getElementById('applyCustom').onclick=()=>{ 
-        const msg=document.getElementById('customMsg');
-        msg.className='muted'; msg.textContent='';
-        state.customFormula = document.getElementById('customFormula').value.trim();
-        try{
-          render();
-          const btn = document.getElementById('applyCustom');
-          const old = btn.textContent;
-          btn.disabled = true; btn.textContent = 'Applied ✓';
-          msg.className='muted ok'; msg.textContent='Custom metric applied';
-          btn.classList.add('ring');
-          setTimeout(()=>{ btn.disabled=false; btn.textContent=old; btn.classList.remove('ring'); }, 800);
-        }catch(e){
-          msg.className='muted err'; msg.textContent='Error: '+e.message;
-        }
-      };
+      // page/citation ranges
+      document.getElementById('pageMin').addEventListener('input', e => { state.pageMin = numOrNull(e.target.value); render(); });
+      document.getElementById('pageMax').addEventListener('input', e => { state.pageMax = numOrNull(e.target.value); render(); });
+      document.getElementById('citeMin').addEventListener('input', e => { state.citeMin = numOrNull(e.target.value); render(); });
+      document.getElementById('citeMax').addEventListener('input', e => { state.citeMax = numOrNull(e.target.value); render(); });
 
       // ---------- Pretty conference multiselect (instant apply) ----------
       let confOpen = false, allConfsCache = [];
@@ -540,11 +535,6 @@
         (d.printers||d.professors||[]).forEach(p => (p.works||[]).forEach(w => { if(w.year) ys.add(w.year); }));
         return [...ys].sort((a,b)=>a-b);
       }
-
-      // ---------- search wiring (debounced) ----------
-      function debounce(fn,ms){ let t; return (...args)=>{ clearTimeout(t); t=setTimeout(()=>fn(...args),ms); }; }
-      const searchEl = document.getElementById('search');
-      searchEl.addEventListener('input', debounce(()=>{ state.search = searchEl.value; render(); }, 120));
 
       loadData();
     </script>

@@ -1,0 +1,1030 @@
+{
+  "printers": [
+    {
+      "name": "Noah G. Singer",
+      "institution": "Ph.D. student, Carnegie Mellon University",
+      "scholar_user": "sJB6rcgAAAAJ",
+      "start_year": 2021,
+      "works": [
+        {
+          "title": "Streaming beyond sketching for Maximum Directed Cut.",
+          "year": 2022,
+          "venue": "Electron. Colloquium Comput. Complex., 2022",
+          "pages": 16,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=sJB6rcgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=sJB6rcgAAAAJ:zYLM7Y9cAGgC",
+          "preprint": "None",
+          "citations": 1,
+          "source_used_for_pages": "crossref-title",
+          "pages_trace": [
+            [
+              "crossref-title",
+              "Streaming beyond sketching for Maximum Directed Cut.",
+              16
+            ]
+          ],
+          "pdf_url": null,
+          "pdf_label": null,
+          "has_online": false,
+          "conference": "Other",
+          "conference_rank": 10
+        },
+        {
+          "title": "Oblivious Algorithms for Maximum Directed Cut: New Upper and Lower Bounds",
+          "year": 2024,
+          "venue": "arXiv preprint arXiv:2411.12976, 2024",
+          "pages": 17,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=sJB6rcgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=sJB6rcgAAAAJ:hqOjcs7Dif8C",
+          "preprint": "arxiv:2411.12976",
+          "citations": 3,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2411.12976.pdf",
+              17
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2411.12976.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "preprint",
+          "conference_rank": 9
+        },
+        {
+          "title": "Oblivious algorithms for the Max-AND Problem",
+          "year": 2023,
+          "venue": "arXiv preprint arXiv:2305.04438, 2023",
+          "pages": 29,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=sJB6rcgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=sJB6rcgAAAAJ:Tyk-4Ss8FVUC",
+          "preprint": "arxiv:2305.04438",
+          "citations": 10,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2305.04438.pdf",
+              29
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2305.04438.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "preprint",
+          "conference_rank": 9
+        },
+        {
+          "title": "Streaming approximation resistance of every ordering CSP",
+          "year": 2024,
+          "venue": "computational complexity 33 (1), 6, 2024",
+          "pages": 21,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=sJB6rcgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=sJB6rcgAAAAJ:roLk4NBRz8UC",
+          "preprint": "arxiv:2105.01782v3",
+          "citations": 4,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2105.01782.pdf",
+              21
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2105.01782v3.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "preprint",
+          "conference_rank": 9
+        },
+        {
+          "title": "Streaming complexity of CSPs with randomly ordered constraints",
+          "year": 2023,
+          "venue": "Proceedings of the 2023 Annual ACM-SIAM Symposium on Discrete Algorithms …, 2023",
+          "pages": 41,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=sJB6rcgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=sJB6rcgAAAAJ:UeHWp8X0CEIC",
+          "preprint": "arxiv:2207.07158v1",
+          "citations": 17,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2207.07158.pdf",
+              41
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2207.07158v1.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "SODA 2023",
+          "conference_rank": 1
+        },
+        {
+          "title": "Nine lower bound conjectures on streaming approximation algorithms for CSPs",
+          "year": 2025,
+          "venue": "arXiv preprint arXiv:2510.10714, 2025",
+          "pages": 12,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=sJB6rcgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=sJB6rcgAAAAJ:KlAtU1dfN6UC",
+          "preprint": "arxiv:2510.10714",
+          "citations": 0,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2510.10714.pdf",
+              12
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2510.10714.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "preprint",
+          "conference_rank": 9
+        },
+        {
+          "title": "Latency Guarantees for Caching with Delayed Hits",
+          "year": 2025,
+          "venue": "IEEE INFOCOM 2025-IEEE Conference on Computer Communications, 1-10, 2025",
+          "pages": 19,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=sJB6rcgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=sJB6rcgAAAAJ:5nxA0vEk-isC",
+          "preprint": "arxiv:2501.16535v1",
+          "citations": 0,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2501.16535.pdf",
+              19
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2501.16535v1.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "preprint",
+          "conference_rank": 9
+        },
+        {
+          "title": "Sketching approximations and LP approximations for finite CSPs are related",
+          "year": 2025,
+          "venue": "arXiv preprint arXiv:2509.17926, 2025",
+          "pages": 10,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=sJB6rcgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=sJB6rcgAAAAJ:kNdYIx-mwKoC",
+          "preprint": "arxiv:2509.17926",
+          "citations": 1,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2509.17926.pdf",
+              10
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2509.17926.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "preprint",
+          "conference_rank": 9
+        },
+        {
+          "title": "Streaming Algorithms via Local Algorithms for Maximum Directed Cut",
+          "year": 2025,
+          "venue": "Proceedings of the 2025 Annual ACM-SIAM Symposium on Discrete Algorithms …, 2025",
+          "pages": 46,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=sJB6rcgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=sJB6rcgAAAAJ:0EnyYjriUFMC",
+          "preprint": "arxiv:2411.18829v1",
+          "citations": 4,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2411.18829.pdf",
+              46
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2411.18829v1.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "SODA 2025",
+          "conference_rank": 1
+        },
+        {
+          "title": "A Classical Quadratic Speedup for Planted XOR",
+          "year": 2025,
+          "venue": "arXiv preprint arXiv:2508.09422, 2025",
+          "pages": 22,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=sJB6rcgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=sJB6rcgAAAAJ:MXK_kJrjxJIC",
+          "preprint": "arxiv:2508.09422",
+          "citations": 2,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2508.09422.pdf",
+              22
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2508.09422.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "preprint",
+          "conference_rank": 9
+        },
+        {
+          "title": "Improved streaming algorithms for Maximum Directed Cut via smoothed snapshots",
+          "year": 2023,
+          "venue": "2023 IEEE 64th Annual Symposium on Foundations of Computer Science (FOCS …, 2023",
+          "pages": 53,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=sJB6rcgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=sJB6rcgAAAAJ:Se3iqnhoufwC",
+          "preprint": "arxiv:2211.03916v2",
+          "citations": 15,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2211.03916.pdf",
+              53
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2211.03916v2.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "FOCS 2023",
+          "conference_rank": 0
+        },
+        {
+          "title": "On sketching approximations for symmetric Boolean CSPs",
+          "year": 2021,
+          "venue": "arXiv preprint arXiv:2112.06319, 2021",
+          "pages": 27,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=sJB6rcgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=sJB6rcgAAAAJ:IjCSPb-OGe4C",
+          "preprint": "arxiv:2112.06319",
+          "citations": 12,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2112.06319.pdf",
+              27
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2112.06319.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "preprint",
+          "conference_rank": 9
+        },
+        {
+          "title": "On streaming approximation algorithms for constraint satisfaction problems",
+          "year": 2022,
+          "venue": "Harvard University, 2022",
+          "pages": 141,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=sJB6rcgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=sJB6rcgAAAAJ:2osOgNQ5qMEC",
+          "preprint": "arxiv:2304.06664v1",
+          "citations": 7,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2304.06664.pdf",
+              141
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2304.06664v1.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "preprint",
+          "conference_rank": 9
+        },
+        {
+          "title": "Coboundary expansion inside Chevalley coset complex HDXs",
+          "year": 2024,
+          "venue": "arXiv preprint arXiv:2411.05916, 2024",
+          "pages": 131,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=sJB6rcgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=sJB6rcgAAAAJ:UebtZRa9Y70C",
+          "preprint": "arxiv:2411.05916",
+          "citations": 1,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2411.05916.pdf",
+              131
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2411.05916.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "preprint",
+          "conference_rank": 9
+        },
+        {
+          "title": "Streaming approximation resistance of every ordering CSP",
+          "year": 2021,
+          "venue": "APPROX 2021, 2021",
+          "pages": 21,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=sJB6rcgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=sJB6rcgAAAAJ:qjMakFHDy7sC",
+          "preprint": "arxiv:2105.01782v3",
+          "citations": 16,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2105.01782.pdf",
+              21
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2105.01782v3.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "APPROX 2021",
+          "conference_rank": 7
+        },
+        {
+          "title": "Point-hyperplane incidence geometry and the log-rank conjecture",
+          "year": 2022,
+          "venue": "ACM Transactions on Computation Theory (TOCT) 14 (2), 1-16, 2022",
+          "pages": 14,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=sJB6rcgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=sJB6rcgAAAAJ:u5HHmVD_uO8C",
+          "preprint": "arxiv:2101.09592v5",
+          "citations": 10,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2101.09592.pdf",
+              14
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2101.09592v5.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "preprint",
+          "conference_rank": 9
+        },
+        {
+          "title": "Borges and the aesthetics of computation",
+          "year": null,
+          "venue": "Variaciones Borges 56, 0",
+          "pages": 20,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=sJB6rcgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=sJB6rcgAAAAJ:LkGwnXOMwfcC",
+          "preprint": "None",
+          "citations": 0,
+          "source_used_for_pages": "crossref-title",
+          "pages_trace": [
+            [
+              "crossref-title",
+              "Borges and the aesthetics of computation",
+              20
+            ]
+          ],
+          "pdf_url": null,
+          "pdf_label": null,
+          "has_online": false,
+          "conference": "Other",
+          "conference_rank": 10
+        },
+        {
+          "title": "Approximation, Randomization, and Combinatorial Optimization. Algorithms and Techniques (APPROX/RANDOM 2023)",
+          "year": 2023,
+          "venue": "Schloss Dagstuhl-Leibniz-Zentrum für Informatik GmbH, 2023",
+          "pages": 0,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=sJB6rcgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=sJB6rcgAAAAJ:8k81kl-MbHgC",
+          "preprint": "None",
+          "citations": 0,
+          "source_used_for_pages": "unknown",
+          "pages_trace": [
+            [
+              "crossref-title",
+              "Approximation, Randomization, and Combinatorial Optimization. Algorithms and Techniques (APPROX/RANDOM 2023)",
+              0
+            ]
+          ],
+          "pdf_url": null,
+          "pdf_label": null,
+          "has_online": false,
+          "conference": "Other",
+          "conference_rank": 10
+        },
+        {
+          "title": "Algebra Is Half the Battle: Verifying Presentations of Graded Unipotent Chevalley Groups",
+          "year": 2025,
+          "venue": "16th International Conference on Interactive Theorem Proving (ITP 2025), 9 …, 2025",
+          "pages": 0,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=sJB6rcgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=sJB6rcgAAAAJ:3fE2CSJIrl8C",
+          "preprint": "None",
+          "citations": 0,
+          "source_used_for_pages": "unknown",
+          "pages_trace": [
+            [
+              "crossref-title",
+              "Algebra Is Half the Battle: Verifying Presentations of Graded Unipotent Chevalley Groups",
+              0
+            ]
+          ],
+          "pdf_url": null,
+          "pdf_label": null,
+          "has_online": false,
+          "conference": "Other",
+          "conference_rank": 10
+        }
+      ]
+    },
+    {
+      "name": "Meghal Gupta",
+      "institution": "U.C. Berkeley",
+      "scholar_user": "7JU5bb0AAAAJ",
+      "start_year": 2016,
+      "works": [
+        {
+          "title": "Approximation, Randomization, and Combinatorial Optimization. Algorithms and Techniques (APPROX/RANDOM 2023)",
+          "year": 2023,
+          "venue": "Schloss Dagstuhl-Leibniz-Zentrum für Informatik GmbH, 2023",
+          "pages": 0,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7JU5bb0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=7JU5bb0AAAAJ:ULOm3_A8WrAC",
+          "preprint": "None",
+          "citations": 0,
+          "source_used_for_pages": "unknown",
+          "pages_trace": [
+            [
+              "crossref-title",
+              "Approximation, Randomization, and Combinatorial Optimization. Algorithms and Techniques (APPROX/RANDOM 2023)",
+              0
+            ]
+          ],
+          "pdf_url": null,
+          "pdf_label": null,
+          "has_online": false,
+          "conference": "Other",
+          "conference_rank": 10
+        },
+        {
+          "title": "Error correction for message streams",
+          "year": 2025,
+          "venue": "16th Innovations in Theoretical Computer Science Conference (ITCS 2025), 59 …, 2025",
+          "pages": 2,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7JU5bb0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=7JU5bb0AAAAJ:3fE2CSJIrl8C",
+          "preprint": "None",
+          "citations": 1,
+          "source_used_for_pages": "crossref-title",
+          "pages_trace": [
+            [
+              "crossref-title",
+              "Error correction for message streams",
+              2
+            ]
+          ],
+          "pdf_url": null,
+          "pdf_label": null,
+          "has_online": false,
+          "conference": "ITCS 2025",
+          "conference_rank": 4
+        },
+        {
+          "title": "Dueling optimization with a monotone adversary",
+          "year": 2024,
+          "venue": "International Conference on Algorithmic Learning Theory, 221-243, 2024",
+          "pages": 21,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7JU5bb0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=7JU5bb0AAAAJ:_FxGoFyzp5QC",
+          "preprint": "arxiv:2311.11185v1",
+          "citations": 7,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2311.11185.pdf",
+              21
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2311.11185v1.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "ALT 2024",
+          "conference_rank": 5
+        },
+        {
+          "title": "List Decoding Bounds for Binary Codes with Noiseless Feedback",
+          "year": 2024,
+          "venue": "arXiv preprint arXiv:2410.01951, 2024",
+          "pages": 22,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7JU5bb0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=7JU5bb0AAAAJ:UebtZRa9Y70C",
+          "preprint": "arxiv:2410.01951",
+          "citations": 0,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2410.01951.pdf",
+              22
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2410.01951.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "preprint",
+          "conference_rank": 9
+        },
+        {
+          "title": "A new upper bound on the maximal error resilience of interactive error-correcting codes",
+          "year": 2023,
+          "venue": "arXiv preprint arXiv:2305.04376, 2023",
+          "pages": 16,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7JU5bb0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=7JU5bb0AAAAJ:W7OEmFMy1HYC",
+          "preprint": "arxiv:2305.04376",
+          "citations": 1,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2305.04376.pdf",
+              16
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2305.04376.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "preprint",
+          "conference_rank": 9
+        },
+        {
+          "title": "On Interactive Coding Schemes with Adaptive Termination",
+          "year": 2023,
+          "venue": "arXiv preprint arXiv:2309.04586, 2023",
+          "pages": 27,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7JU5bb0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=7JU5bb0AAAAJ:WF5omc3nYNoC",
+          "preprint": "arxiv:2309.04586",
+          "citations": 0,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2309.04586.pdf",
+              27
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2309.04586.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "preprint",
+          "conference_rank": 9
+        },
+        {
+          "title": "Few Single-Qubit Measurements Suffice to Certify Any Quantum State",
+          "year": 2025,
+          "venue": "arXiv preprint arXiv:2506.11355, 2025",
+          "pages": 13,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7JU5bb0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=7JU5bb0AAAAJ:4TOpqqG69KYC",
+          "preprint": "arxiv:2506.11355",
+          "citations": 6,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2506.11355.pdf",
+              13
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2506.11355.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "preprint",
+          "conference_rank": 9
+        },
+        {
+          "title": "Constant query local decoding against deletions is impossible",
+          "year": 2024,
+          "venue": "Proceedings of the 56th Annual ACM Symposium on Theory of Computing, 752-763, 2024",
+          "pages": 28,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7JU5bb0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=7JU5bb0AAAAJ:ufrVoPGSRksC",
+          "preprint": "arxiv:2311.08399v1",
+          "citations": 3,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2311.08399.pdf",
+              28
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2311.08399v1.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "STOC 2024",
+          "conference_rank": 0
+        },
+        {
+          "title": "A Noise Resilient Transformation for Streaming Algorithms",
+          "year": 2023,
+          "venue": "arXiv preprint arXiv:2307.07087, 2023",
+          "pages": 32,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7JU5bb0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=7JU5bb0AAAAJ:YsMSGLbcyi4C",
+          "preprint": "arxiv:2307.07087",
+          "citations": 1,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2307.07087.pdf",
+              32
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2307.07087.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "preprint",
+          "conference_rank": 9
+        },
+        {
+          "title": "A Classical Quadratic Speedup for Planted XOR",
+          "year": 2025,
+          "venue": "arXiv preprint arXiv:2508.09422, 2025",
+          "pages": 22,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7JU5bb0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=7JU5bb0AAAAJ:M3ejUd6NZC8C",
+          "preprint": "arxiv:2508.09422",
+          "citations": 2,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2508.09422.pdf",
+              22
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2508.09422.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "preprint",
+          "conference_rank": 9
+        },
+        {
+          "title": "Tight bounds for stream decodable error-correcting codes",
+          "year": 2024,
+          "venue": "arXiv preprint arXiv:2407.06446, 2024",
+          "pages": 34,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7JU5bb0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=7JU5bb0AAAAJ:roLk4NBRz8UC",
+          "preprint": "arxiv:2407.06446",
+          "citations": 1,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2407.06446.pdf",
+              34
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2407.06446.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "preprint",
+          "conference_rank": 9
+        },
+        {
+          "title": "Efficient interactive coding achieving optimal error resilience over the binary channel",
+          "year": 2023,
+          "venue": "Proceedings of the 55th Annual ACM Symposium on Theory of Computing, 1449-1462, 2023",
+          "pages": 47,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7JU5bb0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=7JU5bb0AAAAJ:UeHWp8X0CEIC",
+          "preprint": "arxiv:2207.01144v1",
+          "citations": 7,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2207.01144.pdf",
+              47
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2207.01144v1.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "STOC 2023",
+          "conference_rank": 0
+        },
+        {
+          "title": "Optimal quantile estimation: beyond the comparison model",
+          "year": 2024,
+          "venue": "2024 IEEE 65th Annual Symposium on Foundations of Computer Science (FOCS …, 2024",
+          "pages": 39,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7JU5bb0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=7JU5bb0AAAAJ:LkGwnXOMwfcC",
+          "preprint": "arxiv:2404.03847v1",
+          "citations": 7,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2404.03847.pdf",
+              39
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2404.03847v1.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "FOCS 2024",
+          "conference_rank": 0
+        },
+        {
+          "title": "Interactive Coding with Unbounded Noise",
+          "year": 2024,
+          "venue": "arXiv preprint arXiv:2407.09463, 2024",
+          "pages": 43,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7JU5bb0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=7JU5bb0AAAAJ:Se3iqnhoufwC",
+          "preprint": "arxiv:2407.09463",
+          "citations": 0,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2407.09463.pdf",
+              43
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2407.09463.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "preprint",
+          "conference_rank": 9
+        },
+        {
+          "title": "The optimal error resilience of interactive communication over binary channels",
+          "year": 2022,
+          "venue": "Proceedings of the 54th Annual ACM SIGACT Symposium on Theory of Computing …, 2022",
+          "pages": 28,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7JU5bb0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=7JU5bb0AAAAJ:9yKSN-GCB0IC",
+          "preprint": "arxiv:2110.15395v2",
+          "citations": 15,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2110.15395.pdf",
+              28
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2110.15395v2.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "STOC 2022",
+          "conference_rank": 0
+        },
+        {
+          "title": "Bounding extremal functions of forbidden matrices using -formations",
+          "year": 2016,
+          "venue": "arXiv preprint arXiv:1603.06124, 2016",
+          "pages": 10,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7JU5bb0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=7JU5bb0AAAAJ:IjCSPb-OGe4C",
+          "preprint": "arxiv:1603.06124",
+          "citations": 2,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/1603.06124.pdf",
+              10
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/1603.06124.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "preprint",
+          "conference_rank": 9
+        },
+        {
+          "title": "Positive rate binary interactive error correcting codes resilient to 1/2 adversarial erasures",
+          "year": 2022,
+          "venue": "arXiv preprint arXiv:2201.11929 3, 2022",
+          "pages": 14,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7JU5bb0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=7JU5bb0AAAAJ:qxL8FJ1GzNcC",
+          "preprint": "arxiv:2201.11929",
+          "citations": 5,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2201.11929.pdf",
+              14
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2201.11929.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "preprint",
+          "conference_rank": 9
+        },
+        {
+          "title": "Positive Rate Binary Interactive Error Correcting Codes Resilient to Adversarial Erasures",
+          "year": 2022,
+          "venue": "arXiv preprint arXiv:2201.11929, 2022",
+          "pages": 14,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7JU5bb0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=7JU5bb0AAAAJ:Y0pCki6q_DkC",
+          "preprint": "arxiv:2201.11929",
+          "citations": 0,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2201.11929.pdf",
+              14
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2201.11929.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "preprint",
+          "conference_rank": 9
+        },
+        {
+          "title": "A formula for -Polynomials in terms of -Vectors and Stabilization of -Polynomials",
+          "year": 2018,
+          "venue": "arXiv preprint arXiv:1812.01910, 2018",
+          "pages": 29,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7JU5bb0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=7JU5bb0AAAAJ:Tyk-4Ss8FVUC",
+          "preprint": "arxiv:1812.01910",
+          "citations": 7,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/1812.01910.pdf",
+              29
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/1812.01910.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "preprint",
+          "conference_rank": 9
+        },
+        {
+          "title": "Tight Space Lower Bound for Pseudo-Deterministic Approximate Counting",
+          "year": 2023,
+          "venue": "2023 IEEE 64th Annual Symposium on Foundations of Computer Science (FOCS …, 2023",
+          "pages": 19,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7JU5bb0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=7JU5bb0AAAAJ:zYLM7Y9cAGgC",
+          "preprint": "arxiv:2304.01438v3",
+          "citations": 5,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2304.01438.pdf",
+              19
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2304.01438v3.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "FOCS 2023",
+          "conference_rank": 0
+        },
+        {
+          "title": "An optimal algorithm for certifying monotone functions",
+          "year": 2023,
+          "venue": "Symposium on Simplicity in Algorithms (SOSA), 207-212, 2023",
+          "pages": 8,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7JU5bb0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=7JU5bb0AAAAJ:u-x6o8ySG0sC",
+          "preprint": "arxiv:2204.01224v1",
+          "citations": 1,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2204.01224.pdf",
+              8
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2204.01224v1.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "preprint",
+          "conference_rank": 9
+        },
+        {
+          "title": "Binary error-correcting codes with minimal noiseless feedback",
+          "year": 2023,
+          "venue": "Proceedings of the 55th Annual ACM Symposium on Theory of Computing, 1475-1487, 2023",
+          "pages": 43,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7JU5bb0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=7JU5bb0AAAAJ:2osOgNQ5qMEC",
+          "preprint": "arxiv:2212.05673v2",
+          "citations": 12,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2212.05673.pdf",
+              43
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2212.05673v2.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "STOC 2023",
+          "conference_rank": 0
+        },
+        {
+          "title": "Interactive Error Correcting Codes Over Binary Erasure Channels Resilient to Adversarial Corruption",
+          "year": 2021,
+          "venue": "arXiv preprint arXiv:2111.04181, 2021",
+          "pages": 36,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7JU5bb0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=7JU5bb0AAAAJ:d1gkVwhDpl0C",
+          "preprint": "arxiv:2111.04181",
+          "citations": 0,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2111.04181.pdf",
+              36
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2111.04181.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "preprint",
+          "conference_rank": 9
+        },
+        {
+          "title": "Interactive error correcting codes over binary erasure channels resilient to> ½ adversarial corruption",
+          "year": 2022,
+          "venue": "ACM| Proceedings of the 54th Annual ACM SIGACT Symposium on Theory of Computing, 2022",
+          "pages": 36,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7JU5bb0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=7JU5bb0AAAAJ:u5HHmVD_uO8C",
+          "preprint": "arxiv:2111.04181v1",
+          "citations": 0,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2111.04181.pdf",
+              36
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2111.04181v1.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "STOC 2022",
+          "conference_rank": 0
+        },
+        {
+          "title": "Interactive error correcting codes over binary erasure channels resilient to> ½ adversarial corruption",
+          "year": 2022,
+          "venue": "Proceedings of the 54th Annual ACM SIGACT Symposium on Theory of Computing …, 2022",
+          "pages": 36,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7JU5bb0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=7JU5bb0AAAAJ:qjMakFHDy7sC",
+          "preprint": "arxiv:2111.04181v1",
+          "citations": 6,
+          "source_used_for_pages": "arxiv",
+          "pages_trace": [
+            [
+              "arxiv",
+              "https://arxiv.org/pdf/2111.04181.pdf",
+              36
+            ]
+          ],
+          "pdf_url": "https://arxiv.org/pdf/2111.04181v1.pdf",
+          "pdf_label": "arxiv",
+          "has_online": true,
+          "conference": "STOC 2022",
+          "conference_rank": 0
+        },
+        {
+          "title": "Interactive Error Correcting Codes: New Constructions and Impossibility Bounds",
+          "year": 2023,
+          "venue": "Approximation, Randomization, and Combinatorial Optimization. Algorithms and …, 2023",
+          "pages": 57,
+          "id": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7JU5bb0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=7JU5bb0AAAAJ:eQOLeE2rZwMC",
+          "preprint": "None",
+          "citations": 0,
+          "source_used_for_pages": "crossref-title",
+          "pages_trace": [
+            [
+              "crossref-title",
+              "Interactive Error Correcting Codes: New Constructions and Impossibility Bounds",
+              57
+            ]
+          ],
+          "pdf_url": null,
+          "pdf_label": null,
+          "has_online": false,
+          "conference": "APPROX/RANDOM 2023",
+          "conference_rank": 7
+        }
+      ]
+    }
+  ],
+  "years": [
+    2016,
+    2018,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "conference_order": [
+    "FOCS",
+    "STOC",
+    "SODA",
+    "ITCS",
+    "ALT",
+    "APPROX",
+    "APPROX/RANDOM",
+    "preprint",
+    "Other"
+  ]
+}

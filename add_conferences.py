@@ -60,6 +60,7 @@ CONFS: List[Tuple[str, List[str]]] = [
     ("ICLR",  [r"\bICLR\b", r"international conference on learning representations"]),
     ("PODS",  [r"\bPODS\b", r"principles of database systems", r"sigmod[- ]sigact[- ]sigai.*principles of database systems"]),
     ("SIGMOD",[r"\bSIGMOD\b", r"international conference on management of data", r"acm.*sigmod"]),
+    # Fixed: use TOCT (ACM Transactions on Computation(al) Theory) with stricter patterns,
 ]
 
 # Preprint hints
